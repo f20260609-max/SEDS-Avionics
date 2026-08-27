@@ -5,6 +5,12 @@
 
 ---
 
+Hi, my name's Saptarshi. I'm very interested in space tech cuz I believe it's the pinnacle of human engineering.... now... what all I have experienced while doing the Avionics tasks...
+first of all... I got to know how amazing TinkerCAD is... and also that it's not as formidable to understand if you have help(AI btw ... but still...). I had completed the python task with the help of AI relatively faster than the TinkerCAD task since I have an idea about python but I still had to install the matplotlib , numpy and pandas into my IDLE python version and set it to PATH in my Windows and whatnot since what I had was apparently the kiddy version of python. That was kinda exciting... since it always gives you a sense of accomplishment after you've managed to solve smth that had been giving you trouble(the modules were refusing to upload so I had to do some Windows + R stuff and typed shi in...). Now... regarding my experiences in Task 2... they were a bit of a roller coaster ride... I made the connections and wiring relatively easily as compared to the coding part.... the coding part i read thru once and I WILL be studying it in more detail after this too.... since I'm a total newbie to C++. But the pushbutton and light readings weren't working as I wanted them to(Or I THOUGHT I wanted them to...) after spending a ginormous amount of time trying to figure out what the problem was(could have done the structural part in the spent amount of time btw).... I finally realised that it was just a simulation error in my computer after I sat down one last time with a friend.... imagine my relief and anguish at that time lol... 
+Lastly... I would like to say... that the induction tasks did help me learn new things and I'm kinda happy that I have the experience since I didn't even know TinkerCAD and all existed...Thanks a lot for this amazing experience....
+
+(Btw the next part is AI written since I wanted it to give a better idea on hwo stuff worked... I have a basic idea abt it too... but I felt that it would write it better.)
+
 ## Overview
 This repository contains the source code, implementation details, and circuit schematics for the SEDS BPHC Avionics Subsystem Round 1 Induction Tasks.
 
@@ -26,7 +32,7 @@ This repository contains the source code, implementation details, and circuit sc
 ## Task 2: Keeping Watch Over Odysseus
 
 ### System Architecture & State Machine
-The onboard safety system was designed in Tinkercad Circuits using an Arduino Uno, 16x2 LCD screen, 3-pin Ping ultrasonic sensor, ambient light sensor (LDR), push button, alert LED, and piezo buzzer.
+The onboard safety system was designed in TinkerCAD Circuits using an Arduino Uno, 16x2 LCD screen(I would have tried I2C... but somehow it wasn't powering on... dunno why), 3-pin Ping ultrasonic sensor, ambient light sensor (LDR), push button, alert LED, and piezo buzzer.
 
 The system runs a non-blocking Finite State Machine (FSM) utilizing `millis()`:
 * **OPEN SEA:** Default navigation state; vessel sails safely.
