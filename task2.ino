@@ -186,9 +186,9 @@ void loop() {
   int lightVal = analogRead(PIN_LDR);
   float distanceVal = readDistanceCM();
   
-  Serial.println(lightVal);
+  Serial.println(lightVal);      // this part of the code moves the light brightness to the serial monitor so that i can see it in real time as i move the slider... that's how i figured out that the halfway mark was 505
 
-  bool stormActive = ( lightVal < LIGHT_THRESHOLD);
+  bool stormActive = ( lightVal < LIGHT_THRESHOLD);   // this part of the code activates the storm and the charybdis whenever the thresholds are crossed.
   bool charybdisActive = (distanceVal < DIST_THRESHOLD);
    
   // ---------------------------------------------------------
@@ -209,7 +209,7 @@ void loop() {
       } else if (charybdisActive) {
         currentState = STATE_CHARYBDIS;
         dangerStartTime = millis();
-        tone(PIN_BUZZER, 1000);
+        tone(PIN_BUZZER, 1000);      //emits a $1000\text{ Hz}$ acoustic alarm on the buzzer pin.(kinda harsh sounding... wanted to change it to smth nice but couldn't)
       }
       break;
 
@@ -217,7 +217,7 @@ void loop() {
       // Non-blocking 250ms LED blink
       if (millis() - lastLedBlinkTime >= 250) {
         lastLedBlinkTime = millis();
-        ledState = !ledState;
+        ledState = !ledState;                               // the led blinks every 250 ms(according to the simulator time)
         digitalWrite(PIN_LED, ledState ? HIGH : LOW);
       }
       noTone(PIN_BUZZER);
